@@ -1,6 +1,6 @@
 <?php
 
-class CleverDistrict extends CleverApiResource
+class CleverDistrictAdmin extends CleverApiResource
 {
   public static function constructFrom($values, $auth=null)
   {
@@ -23,12 +23,8 @@ class CleverDistrict extends CleverApiResource
   private static $secondLevelEndpoints;
   public static function init()
   {
-    self::$secondLevelEndpoints = array('schools'  => array(),
-                                        'teachers' => array(),
-                                        'students' => array(),
-                                        'sections' => array(),
-                                        'events'   => array(),
-                                        'admins' => array());
+    self::$secondLevelEndpoints = array('districts' => array(),
+                                        'events' => array());
   }
   public function __call($method, $args)
   {
@@ -43,4 +39,4 @@ class CleverDistrict extends CleverApiResource
   }
 }
 
-CleverDistrict::init();
+CleverDistrictAdmin::init();

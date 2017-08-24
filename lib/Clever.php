@@ -56,6 +56,7 @@ require(dirname(__FILE__) . '/Clever/ApiResource.php');
 
 // Clever API Resources
 require(dirname(__FILE__) . '/Clever/District.php');
+require(dirname(__FILE__) . '/Clever/DistrictAdmin.php');
 require(dirname(__FILE__) . '/Clever/School.php');
 require(dirname(__FILE__) . '/Clever/SchoolAdmin.php');
 require(dirname(__FILE__) . '/Clever/Teacher.php');
